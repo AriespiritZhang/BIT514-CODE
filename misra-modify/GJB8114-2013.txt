@@ -1,0 +1,63 @@
+Appendix A Summary of guidelines
+Rule 1.1
+Required - 禁止通过宏定义改变关键字和基本类型含义
+Rule 1.2
+Required - 禁止将其他标识宏定义位关键字和基本类型
+Rule 1.3
+Required - 用typedef自定义的类型禁止呗重新定义
+Rule 1.4
+Required - 禁止重新定义C或C++的关键字
+Rule 1.5
+Required - 禁止#define被重复定义
+Rule 1.6
+Required - 函数中的#define和#undef必须配对使用
+Rule 1.7
+Required - 以函数形式定义的宏，参数和结果必须用括号括起来
+Rule 1.8
+Required - 结构、联合、枚举的定义中必须定义标识名
+Rule 1.9
+Required - 结构体定义中禁止含有无名结构体
+Rule 1.10
+Required - 位定义的有符号整形变量位长必须大于1
+Rule 1.11
+Required - 位定义的整数型变量必须明确定义是有符号还是无符号的
+Rule 1.12
+Required - 位定义的变量必须是同长度的类型且定义位禁止跨越类型的长度。
+Rule 1.13
+Required - 函数声明中必须对参数类型进行声明，并带有变量名。
+Rule 1.14
+Required - 函数声明必须与函数原型一致。
+Rule 1.15
+Required - 函数中的参数必须使用类型声明。
+Rule 1.17
+Required - 禁止在函数体内使用外部声明。
+Rule 1.18
+Required - 数组定义禁止没有显式的边界限定。
+Rule 1.19
+Required - 禁止使用extern声明对变量初始化。
+Rule 1.20
+Required - 用于数值计算的字符型变量必须明确定义是有符号还是无符号。
+Rule 1.21
+Required - 禁止在#include 语句中使用绝对路径。
+Rule 1.22
+Required - 禁止头文件重复包含。
+Rule 2.1
+Required - 循环体必须用大括号括起来。
+Rule 2.2
+Required - if、 else if、else必须用大括号括起来。
+Rule 2.3
+Required - 禁止在头文件前有可执行代码。
+Rule 2.6
+Required - 禁止嵌套注释。
+Rule 3.1
+Required - 禁止指针的指针超过两级。
+Rule 4.1
+Required - 在if-else if 语句中必须使用else分支。
+Rule 4.2
+Required - 条件判定分支如果为空，必须以单独一行的分号加注释进行明确说明。
+Rule 6.1
+Required - 禁止将浮点常数赋给整型变量。
+
+
+
+

@@ -1,0 +1,104 @@
+<?xml version="1.0"?>
+<dumps>
+  <platform name="Native" char_bit="8" short_bit="16" int_bit="32" long_bit="64" long_long_bit="64" pointer_bit="64"/>
+  <rawtokens>
+    <file index="0" name="test.c"/>
+    <tok fileIndex="0" linenr="1" column="1" str="#"/>
+    <tok fileIndex="0" linenr="1" column="2" str="include"/>
+    <tok fileIndex="0" linenr="1" column="9" str="&lt;stdio.h&gt;"/>
+    <tok fileIndex="0" linenr="2" column="1" str="// int zdata = 0;"/>
+    <tok fileIndex="0" linenr="4" column="1" str="// extern int zdata = 1;"/>
+    <tok fileIndex="0" linenr="6" column="1" str="int"/>
+    <tok fileIndex="0" linenr="6" column="5" str="main"/>
+    <tok fileIndex="0" linenr="6" column="9" str="("/>
+    <tok fileIndex="0" linenr="6" column="10" str="void"/>
+    <tok fileIndex="0" linenr="6" column="14" str=")"/>
+    <tok fileIndex="0" linenr="6" column="15" str="{"/>
+    <tok fileIndex="0" linenr="7" column="5" str="unsigned"/>
+    <tok fileIndex="0" linenr="7" column="14" str="int"/>
+    <tok fileIndex="0" linenr="7" column="18" str="x"/>
+    <tok fileIndex="0" linenr="7" column="19" str=","/>
+    <tok fileIndex="0" linenr="7" column="20" str="y"/>
+    <tok fileIndex="0" linenr="7" column="21" str=";"/>
+    <tok fileIndex="0" linenr="8" column="5" str="x"/>
+    <tok fileIndex="0" linenr="8" column="7" str="="/>
+    <tok fileIndex="0" linenr="8" column="9" str="0x00001"/>
+    <tok fileIndex="0" linenr="8" column="16" str=";"/>
+    <tok fileIndex="0" linenr="9" column="5" str="y"/>
+    <tok fileIndex="0" linenr="9" column="7" str="="/>
+    <tok fileIndex="0" linenr="9" column="9" str="x"/>
+    <tok fileIndex="0" linenr="9" column="11" str="&lt;&lt;"/>
+    <tok fileIndex="0" linenr="9" column="13" str="3"/>
+    <tok fileIndex="0" linenr="9" column="14" str=";"/>
+    <tok fileIndex="0" linenr="10" column="1" str="}"/>
+    <tok fileIndex="0" linenr="11" column="1" str="// int zdata = 1;"/>
+    <tok fileIndex="0" linenr="12" column="1" str="// void func (short a, float b){"/>
+    <tok fileIndex="0" linenr="13" column="1" str="// }"/>
+  </rawtokens>
+  <suppressions>
+  </suppressions>
+<dump cfg="">
+  <standards>
+    <c version="c11"/>
+    <cpp version="c++20"/>
+  </standards>
+  <directivelist>
+    <directive file="test.c" linenr="1" str="#include&lt;stdio.h&gt;"/>
+  </directivelist>
+  <tokenlist>
+    <token id="0x5613a657c7e0" file="test.c" linenr="6" column="1" str="int" scope="0x5613a657d8f0" type="name"/>
+    <token id="0x5613a6578f40" file="test.c" linenr="6" column="5" str="main" scope="0x5613a657d8f0" type="name" function="0x5613a657da60" astParent="0x5613a6578fa0"/>
+    <token id="0x5613a6578fa0" file="test.c" linenr="6" column="9" str="(" scope="0x5613a657d8f0" link="0x5613a6578b60" astOperand1="0x5613a6578f40" valueType-type="int" valueType-sign="signed"/>
+    <token id="0x5613a6578b60" file="test.c" linenr="6" column="14" str=")" scope="0x5613a657d8f0" link="0x5613a6578fa0"/>
+    <token id="0x5613a6577d10" file="test.c" linenr="6" column="15" str="{" scope="0x5613a657db00" link="0x5613a6577590"/>
+    <token id="0x5613a6577d70" file="test.c" linenr="7" column="14" str="int" scope="0x5613a657db00" type="name" isUnsigned="true"/>
+    <token id="0x5613a6577f60" file="test.c" linenr="7" column="18" str="x" scope="0x5613a657db00" type="name" varId="1" variable="0x5613a657d880" valueType-type="int" valueType-sign="unsigned"/>
+    <token id="0x5613a657b850" file="test.c" linenr="7" column="19" str=";" scope="0x5613a657db00"/>
+    <token id="0x5613a657d630" file="test.c" linenr="7" column="14" str="int" scope="0x5613a657db00" type="name" isUnsigned="true"/>
+    <token id="0x5613a657b8b0" file="test.c" linenr="7" column="20" str="y" scope="0x5613a657db00" type="name" varId="2" variable="0x5613a657dce0" valueType-type="int" valueType-sign="unsigned"/>
+    <token id="0x5613a657ba40" file="test.c" linenr="7" column="21" str=";" scope="0x5613a657db00"/>
+    <token id="0x5613a657baa0" file="test.c" linenr="8" column="5" str="x" scope="0x5613a657db00" type="name" varId="1" variable="0x5613a657d880" astParent="0x5613a657a430" valueType-type="int" valueType-sign="unsigned"/>
+    <token id="0x5613a657a430" file="test.c" linenr="8" column="7" str="=" scope="0x5613a657db00" type="op" isAssignmentOp="True" astOperand1="0x5613a657baa0" astOperand2="0x5613a657a490" valueType-type="int" valueType-sign="unsigned"/>
+    <token id="0x5613a657a490" file="test.c" linenr="8" column="9" str="1" scope="0x5613a657db00" type="number" isInt="True" values="0x5613a6579610" astParent="0x5613a657a430" valueType-type="int" valueType-sign="signed"/>
+    <token id="0x5613a6579850" file="test.c" linenr="8" column="16" str=";" scope="0x5613a657db00"/>
+    <token id="0x5613a65798b0" file="test.c" linenr="9" column="5" str="y" scope="0x5613a657db00" type="name" varId="2" variable="0x5613a657dce0" astParent="0x5613a6579e20" valueType-type="int" valueType-sign="unsigned"/>
+    <token id="0x5613a6579e20" file="test.c" linenr="9" column="7" str="=" scope="0x5613a657db00" type="op" isAssignmentOp="True" astOperand1="0x5613a65798b0" astOperand2="0x5613a657a850" valueType-type="int" valueType-sign="unsigned"/>
+    <token id="0x5613a6579e80" file="test.c" linenr="9" column="9" str="x" scope="0x5613a657db00" type="name" varId="1" variable="0x5613a657d880" values="0x5613a6570750" astParent="0x5613a657a850" valueType-type="int" valueType-sign="unsigned"/>
+    <token id="0x5613a657a850" file="test.c" linenr="9" column="11" str="&lt;&lt;" scope="0x5613a657db00" type="op" isArithmeticalOp="True" values="0x5613a6574f10" astParent="0x5613a6579e20" astOperand1="0x5613a6579e80" astOperand2="0x5613a657a8b0" valueType-type="int" valueType-sign="unsigned"/>
+    <token id="0x5613a657a8b0" file="test.c" linenr="9" column="13" str="3" scope="0x5613a657db00" type="number" isInt="True" values="0x5613a6579570" astParent="0x5613a657a850" valueType-type="int" valueType-sign="signed"/>
+    <token id="0x5613a6577530" file="test.c" linenr="9" column="14" str=";" scope="0x5613a657db00"/>
+    <token id="0x5613a6577590" file="test.c" linenr="10" column="1" str="}" scope="0x5613a657db00" link="0x5613a6577d10"/>
+  </tokenlist>
+  <scopes>
+    <scope id="0x5613a657d8f0" type="Global">
+      <functionList>
+        <function id="0x5613a657da60" tokenDef="0x5613a6578f40" name="main" type="Function"/>
+      </functionList>
+    </scope>
+    <scope id="0x5613a657db00" type="Function" className="main" bodyStart="0x5613a6577d10" bodyEnd="0x5613a6577590" nestedIn="0x5613a657d8f0" function="0x5613a657da60">
+      <varlist>
+        <var id="0x5613a657d880"/>
+        <var id="0x5613a657dce0"/>
+      </varlist>
+    </scope>
+  </scopes>
+  <variables>
+    <var id="0x5613a657d880" nameToken="0x5613a6577f60" typeStartToken="0x5613a6577d70" typeEndToken="0x5613a6577d70" access="Local" scope="0x5613a657db00" constness="0" isArgument="false" isArray="false" isClass="false" isConst="false" isExtern="false" isLocal="true" isPointer="false" isReference="false" isStatic="false"/>
+    <var id="0x5613a657dce0" nameToken="0x5613a657b8b0" typeStartToken="0x5613a657d630" typeEndToken="0x5613a657d630" access="Local" scope="0x5613a657db00" constness="0" isArgument="false" isArray="false" isClass="false" isConst="false" isExtern="false" isLocal="true" isPointer="false" isReference="false" isStatic="false"/>
+  </variables>
+  <valueflow>
+    <values id="0x5613a6579610">
+      <value intvalue="1" known="true"/>
+    </values>
+    <values id="0x5613a6570750">
+      <value intvalue="1" known="true"/>
+    </values>
+    <values id="0x5613a6574f10">
+      <value intvalue="8" known="true"/>
+    </values>
+    <values id="0x5613a6579570">
+      <value intvalue="3" known="true"/>
+    </values>
+  </valueflow>
+</dump>
+</dumps>
